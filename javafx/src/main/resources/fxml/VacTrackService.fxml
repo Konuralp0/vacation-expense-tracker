@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="outerAnchorPane" maxHeight="680.0" maxWidth="1080.0" minHeight="680.0" minWidth="1080.0" prefHeight="680.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.hhn.it.devtools.javafx.vactrack.views.VacTrackServiceController">
+   <children>
+      <SplitPane dividerPositions="0.2189239332096475" prefHeight="680.0" prefWidth="1080.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="54.0" layoutY="90.0" prefHeight="668.0" prefWidth="234.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="Wallets">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="createWalletButton" mnemonicParsing="false" onAction="#createWalletOnAction" text="Create Wallet" />
+                        <ListView fx:id="walletListView" onMouseClicked="#selectWallet" prefHeight="325.0" prefWidth="234.0" />
+                        <Button fx:id="deleteWallet" mnemonicParsing="false" onAction="#deleteWalletOnAction" text="Delete Wallet" />
+                        <Label prefWidth="163.0" text="Group Wallets">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="createWalletGroupButton" mnemonicParsing="false" onAction="#createWalletGroupOnAction" text="Create Wallet Group" />
+                        <ListView fx:id="groupWalletListView" onMouseClicked="#selectGroupWallet" prefHeight="265.0" prefWidth="234.0" />
+                        <Button fx:id="deleteWalletGroupButton" mnemonicParsing="false" onAction="#deleteWalletGroupOnAction" text="Delete Group Wallet" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="controlAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="welcoming" layoutX="223.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome! Please select a wallet from the list" wrappingWidth="394.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

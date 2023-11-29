@@ -1,0 +1,4 @@
+rootProject.name = 'tooling-devtools-23-ws'
+
+
+include ':apis', ':components', ':javafx'

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id = "pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.hhn.it.devtools.javafx.vactrack.views.ConvertWalletController">
+   <children>
+      <Button fx:id="convert" layoutX="116.0" layoutY="391.0" mnemonicParsing="false" onAction="#convertOnAction" prefHeight="61.0" prefWidth="199.0" style="-fx-background-color: #E9B888;" text="Convert" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Button>
+      <TextField fx:id="currencyToTextField" layoutX="94.0" layoutY="137.0" prefHeight="42.0" prefWidth="243.0" promptText="Currency To" />
+      <Text layoutX="138.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convert Currency" wrappingWidth="188.5078125">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="exchangeRateField" layoutX="94.0" layoutY="226.0" prefHeight="42.0" prefWidth="243.0" promptText="Exchange Rate" />
+   </children>
+</Pane>

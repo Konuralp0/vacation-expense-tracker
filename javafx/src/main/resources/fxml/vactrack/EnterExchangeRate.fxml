@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.hhn.it.devtools.javafx.vactrack.views.EnterExchangeRateController">
+   <children>
+      <Button fx:id="enter" layoutX="133.0" layoutY="372.0" mnemonicParsing="false" onAction="#enterOnAction" prefHeight="61.0" prefWidth="199.0" style="-fx-background-color: #E9B888;" text="Enter" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Button>
+      <TextField fx:id="currencyFrom" layoutX="47.0" layoutY="129.0" prefHeight="25.0" prefWidth="276.0" promptText="Currency From" />
+      <TextField fx:id="exchangeRate" layoutX="47.0" layoutY="245.0" prefHeight="25.0" prefWidth="104.0" promptText="Exchange Rate" />
+      <TextField fx:id="currencyTo" layoutX="47.0" layoutY="185.0" promptText="Currency To" />
+      <Text layoutX="158.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exchange Rate" wrappingWidth="148.5078125">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
