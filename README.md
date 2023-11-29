@@ -12,7 +12,7 @@ This is a JavaFX project for an Expense Tracker designed specifically for tracki
 - **Group Wallets**: You can add your single wallets to a group wallet to get a better oversight.
 ## Mockups
 **Wallet Dashboard**
-<img src="C:\Users\Konuralp\Desktop\dashboard-wa.PNG">
+![dashboard-wallet](dashboard-wa.PNG)
 
 **Group Wallet Dashboard**
-<img src="C:\Users\Konuralp\Desktop\dashboard-gr.PNG"/>
+![dashboard-wallet](dashboard-gr.PNG)
